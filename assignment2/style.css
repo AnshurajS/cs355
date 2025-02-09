@@ -1,0 +1,109 @@
+:root{
+    --bg-color: #226990;
+    --txt-color: #fff;
+    --bg-color2: #f0a500;
+    --bg-color3: #564216;
+}
+
+:root[theme='dark']{
+    --bg-color: #333;
+    --txt-color: #cee;
+    --bg-color2: #555;
+    --bg-color3: #222;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    font-family: Arial, sans-serif;
+    font-size: 15pt;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+div.content {
+    background-color: var(--bg-color2);
+    padding: 2em;
+    margin: 2em;
+    border-radius: 1em;
+    text-align: center;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+.premier-league{
+    background-color: var(--bg-color3);
+    color: #fff;
+}
+
+.premier-league h1{
+    color: #3b311e;
+}
+
+.premier-league .image{
+    max-width: 150px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.premier-league form{
+    background-color: #0e3d56;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.premier-league form label, .premier-league form input{
+    margin: 10px 0;
+}
+
+.favorite-team{
+    background-color: var(--bg-color3);
+    color: #fff;
+}
+
+.favorite-team h1{
+    color: #3b311e;
+}
+
+.favorite-team .image{
+    max-width: 150px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.favorite-team form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2e2b27;
+}
+
+.favorite-team form label, .favorite-team form input{
+    margin: 10px 0;
+}
+
+#toggle{
+    position: fixed;
+    bottom: 0.5em;
+    right: 0.5em;
+    background-color: var(--txt-color);
+    color: var(--bg-color);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+#toggle:hover{
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    border: solid 1px var(--txt-color);
+    cursor: pointer;
+}
+
+[theme='dark'] {
+    --bg-color: #333;
+    --txt-color: rgb(35, 68, 68);
+    --bg-color2: #555; 
+}
