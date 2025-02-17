@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="premier-league">
+    <div class="content">
+        <h1>Welcome to the Premier League</h1>
+        <img src="premier-league-logo.png" alt="Premier League Logo" class="image">
+        <p>Fill out the form to register your favorite Premier League team:</p>
+        <form id="inputForm" action="page2.html" method="GET">
+            <label for="teamName">Team Name:</label>
+            <input type="text" id="Team Name" name="Team Name" required>
+            <br>
+            <label for="playerName">Star Player:</label>
+            <input type="text" id="Player Name" name="Player Name" required>
+            <br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <button id="toggle" class="dark-mode-toggle">DARK</button>
+</body>
+<script src="script.js"></script>
+</html>
