@@ -1,0 +1,42 @@
+body{
+    background-color: brown;
+    color: white;
+    font-family: Arial;
+    font-size: 16pt;
+}
+
+div{
+    padding: 1em;
+    margin: 1em;
+}
+
+button {
+    font-family: Arial;
+    font-size: 16pt;
+    background-color: #456;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    border: solid 1px #123;
+}
+
+button:hover{
+    background-color: #678;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: #999;
+    cursor: pointer;
+}
+
+textarea {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 16pt;
+    width: 100%;
+    height: 3em;
+}
+
+#results{
+    white-space: pre;
+}
