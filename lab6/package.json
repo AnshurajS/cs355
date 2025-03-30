@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "express": "^4.21.2",
+    "nedb-promises": "^6.2.3",
+    "node": "^20.19.0"
+  }
+}
