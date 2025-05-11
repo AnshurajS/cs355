@@ -31,13 +31,13 @@ A single-page web application for exploring, searching, and saving your favorite
 * **Non-Blocking Alerts**: Pop-up notifications appear in the corner to confirm actions (add/remove, auth errors).
 * **Animated Background**: Orbiting planet and rocket animations over a Milky Way backdrop.
 * **Responsive Design**: Grid layout adapts to various screen sizes.
-* **Welcome Banner**: Displays the logged-in user’s email with a visual separator in the navigation bar.
+* **Welcome Banner**: Displays the logged-in user’s email with a visual separator in the navigation bar. 
 
 ---
 
 ## Demo
 
-Here is the demo of the webapp: https://share.vidyard.com/watch/RcNpdfSqYaWLYdPCgLmsAa
+* Here is the demo of the webapp: https://share.vidyard.com/watch/RcNpdfSqYaWLYdPCgLmsAa
 ---
 
 ## Getting Started
@@ -95,14 +95,14 @@ exoplanet-explorer/
 ├── backend/
 │   ├── index.js           # Express & static file server, routes setup
 │   ├── config/db.js       # NeDB Promises datastore
-│   ├── models/userModel.js# User CRUD helpers
-│   ├── middleware/auth.js # JWT authentication
+│   ├── models/User.js     # User CRUD helpers
+│   ├── authentication/auth.js # JWT authentication
 │   ├── routes/
-│   │   ├── auth.js        # /api/auth endpoints
+│   │   ├── auth.js         # /api/auth endpoints
 │   │   └── exoplanets.js   # /api/exoplanets endpoints
 │   └── controllers/
-│       ├── authController.js     # register, login, profile
-│       └── exoplanetController.js# fetch and favorites logic
+│       ├── authentication.js     # register, login, profile
+│       └── exoplanetFetch.js     # fetch and favorites logic
 └── frontend/
     └── public/
         ├── index.html      # Dashboard & search
@@ -151,14 +151,8 @@ exoplanet-explorer/
 ## Technologies
 
 * **Backend**: Node.js, Express.js, NeDB (nedb-promises), bcrypt, JSON Web Tokens, node-fetch
-* **Frontend**: Vanilla HTML/CSS/JavaScript, CSS Animations
+* **Frontend**: HTML, CSS, JavaScript
 * **Deployment**: Single Express server serving both API and static files
-
----
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
 
 ---
 
